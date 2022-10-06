@@ -39,4 +39,53 @@ class Libro {
     }
 }
 
+class Socio {
+    public $numeroSocio;
+    public $Nombre;
+    public $apellidos;
+    public $telefono;
+    public $direccion;
+
+    function get_NumeroSocio() {
+        return $this->numeroSocio;
+    }
+
+    function set_NumeroSocio($nuevoNumero) {
+        $this->numeroSocio = $nuevoNumero;
+    }
+
+    function get_Nombre() {
+        return $this->Nombre;
+    }
+
+    function set_Nombre($nuevoNombre) {
+        $this->Nombre = $nuevoNombre;
+    }
+
+
+    function get_Apellidos() {
+        return $this->apellidos;
+    }
+
+    function set_Apellidos($nuevoApellido) {
+        $this->apellidos = $nuevoApellido;
+    }
+
+    function get_Telefono() {
+        return $this->telefono;
+    }
+
+    function set_Telefono($nuevoTelefono) {
+        $this->telefono = $nuevoTelefono;
+    }
+
+    function get_Direccion() {
+        return $this->direccion;
+    }
+
+    function set_Direccion($nuevoDireccion) {
+        $this->direccion = $nuevoDireccion;
+    }
+}
+
 ?>
