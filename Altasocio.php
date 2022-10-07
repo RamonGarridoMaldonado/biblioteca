@@ -10,11 +10,11 @@ if ($_GET) {
     $Direccion = $_GET['Direccion'];
 
     $agregarSocio = new Socio();
-    $agregarLibro -> set_NumeroSocio($numeroSocio);
-    $agregarLibro -> set_Nombre($Nombre);
-    $agregarLibro -> set_Apellidos($Apellidos);
-    $agregarLibro -> set_Telefono($Telefono);
-    $agregarLibro -> set_Direccion($Direccion);
+    $agregarSocio -> set_NumeroSocio($numeroSocio);
+    $agregarSocio -> set_Nombre($Nombre);
+    $agregarSocio -> set_Apellidos($Apellidos);
+    $agregarSocio -> set_Telefono($Telefono);
+    $agregarSocio -> set_Direccion($Direccion);
 
     array_push($_SESSION["Socios"] ,$agregarSocio);
     header("Location: listadosocios.php");

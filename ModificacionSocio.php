@@ -19,14 +19,14 @@ if ($_GET) {
     $listaDeSocios = $_SESSION["Socios"];
 
     for ($i=0;$i<count($listaDeSocios);$i++) {
-        if ($listaDeLibros[$i]->get_NumeroSocio() == $numeroSocio) {
-            $listaDeLibros[$i]->set_Nombre($Nombre);
-            $listaDeLibros[$i]->set_Apellidos($Apellidos);
-            $listaDeLibros[$i]->set_Telefono($Telefono);
-            $listaDeLibros[$i]->set_Direccion($Direccion);
+        if ($listaDeSocios[$i]->get_NumeroSocio() == $numeroSocio) {
+            $listaDeSocios[$i]->set_Nombre($Nombre);
+            $listaDeSocios[$i]->set_Apellidos($Apellidos);
+            $listaDeSocios[$i]->set_Telefono($Telefono);
+            $listaDeSocios[$i]->set_Direccion($Direccion);
         }
     }
-    $_SESSION['Socios'] = $listaDeLibros;
-    header("Location: listadolibros.php");
+    $_SESSION['Socios'] = $listaDeSocios;
+    header("Location: listadosocios.php");
 }
 ?>

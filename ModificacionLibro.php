@@ -23,6 +23,6 @@ if ($_GET) {
         }
     }
     $_SESSION['Libros'] = $listaDeLibros;
-    header("Location: listadosocios.php");
+    header("Location: listadolibros.php");
 }
 ?>

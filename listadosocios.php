@@ -10,7 +10,7 @@
         $s .= '<td>'."<b>Direccion</b>".'</td>';
         $s .= '<td colspan="2">'."<b></b>".'</td>';
         $s .= '</tr>';
-        $_SESSION["Libros"] = array();
+        $_SESSION["Socios"] = array();
     } else {
         $s = '<h1>Listado de socios</h1><table border="1">';
         $s .= '<tr>';
@@ -72,7 +72,7 @@ echo $s;
 </head>
 <body>
     <br/>
-    <button onclick="location.href='NuevoLibro.php'">Nuevo libro</button>
+    <button onclick="location.href='NuevoSocio.php'">Nuevo socio</button>
     <button onclick="location.href='index.html'">Volver a INDEX</button>
 </body>
 </html>
